@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:controller="com.appointment.com.asi.controllers.SignInController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0"
+
+      prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="emailInput" layoutX="269.0" layoutY="246.0" prefHeight="27.0" prefWidth="213.0" text="email"/>
+        <TextField fx:id="passInput" layoutX="269.0" layoutY="288.0" prefHeight="27.0" prefWidth="213.0"
+                   text="password"/>
+        <Text layoutX="335.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in"
+              wrappingWidth="80.12310791015625">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Text>
+        <Button fx:id="signInButton" layoutX="269.0" layoutY="330.0" mnemonicParsing="false" onAction="#signInButton"
+                prefHeight="25.0" prefWidth="213.0" text="Sign-In"/>
+        <Button fx:id="signUpAction" layoutX="269.0" layoutY="368.0" mnemonicParsing="false" onAction="#signUpAction"
+                prefHeight="25.0" prefWidth="213.0" text="Sign-Up"/>
+    </children>
+</Pane>
