@@ -16,24 +16,14 @@ public class FXUtil {
     // all view resource link
     public static final String SIGN_IN = "signIn.fxml";
     public static final String PATIENT_FONT_PAGE = "patientFrontPage.fxml";
-    public static final String STAFF_FONT_PAGE = "staffFrontPage.fxml";
+    public static final String VIEW_APPOINTMENT_PATIENT = "viewAppointmentPatient.fxml";
+    public static final String VIEW_OPERATION_PATIENT = "viewOperationPatient.fxml";
+    public static final String VIEW_RECORD_PATIENT = "viewRecordPatient.fxml";
+    public static final String VIEW_PATIENT_INFO = "viewPatientInfo.fxml";
+    public static final String EDIT_PATIENT_INFO = "editPatientInfo.fxml";
+    public static final String VIEW_BILLS_PATIENT = "viewBillsPatient.fxml";
 
-    // load fxml view in the stage
-    public static void loadAnchorView(Class<?> aClass, String fxSource, AnchorPane rootPane, Object... data) {
-        try {
-            // load view in anchor pane area and control separately
-            FXMLLoader loader = new FXMLLoader(aClass.getResource(fxSource));
-            AnchorPane pane = loader.load();
-            // transfer data to the controller
-            if (data.length > 0) {
-                DTO controller = loader.getController();
-                controller.data(data);
-            }
-            rootPane.getChildren().setAll(pane);
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
+    public static final String STAFF_FONT_PAGE = "staffFrontPage.fxml";
 
     // load fxml view in the stage
     public static void loadView(Class<?> aClass, ActionEvent event, String fxSource, String title, Object... data) {
@@ -57,13 +47,4 @@ public class FXUtil {
             e.printStackTrace();
         }
     }
-
-    // show alert
-    public static void showAlert(Alert.AlertType type, String message) {
-        Alert alert = new Alert(type);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
-
 }

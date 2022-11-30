@@ -9,32 +9,20 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class StaffFontPageController implements Initializable {
+public class ViewOperationPatientController implements Initializable {
+
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-    }
 
-    public void onApp(ActionEvent actionEvent) {
-    }
-
-    public void onInformation(ActionEvent actionEvent) {
-    }
-
-    public void onOperation(ActionEvent actionEvent) {
     }
 
     public void onSignOut(ActionEvent actionEvent) {
         FXUtil.loadView(getClass(), actionEvent, FXUtil.SIGN_IN, "Appointment System");
     }
 
-    public void onRecords(ActionEvent actionEvent) {
-    }
-
-    public void onPatientsButton(ActionEvent actionEvent) {
-    }
-
-    public void onRoom(ActionEvent actionEvent) {
+    public void onBackButton(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.PATIENT_FONT_PAGE, "Appointment System");
     }
 }

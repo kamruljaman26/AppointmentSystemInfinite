@@ -1,4 +1,4 @@
-package com.appointment.com.asi;
+package com.appointment.com.asi.controllers;
 
 import com.appointment.com.asi.utils.FXUtil;
 import javafx.application.Application;

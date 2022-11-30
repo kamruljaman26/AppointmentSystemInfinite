@@ -26,20 +26,26 @@ public class PatientFrontPageController implements Initializable {
     }
 
     public void onApp(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_APPOINTMENT_PATIENT, "Appointment System");
     }
 
     public void onInformation(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_PATIENT_INFO, "Appointment System");
     }
 
     public void onOperation(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_OPERATION_PATIENT, "Appointment System");
     }
 
     public void onSignOut(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.SIGN_IN, "Appointment System");
     }
 
     public void onRecords(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_RECORD_PATIENT, "Appointment System");
     }
 
     public void onBills(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_BILLS_PATIENT, "Appointment System");
     }
 }
