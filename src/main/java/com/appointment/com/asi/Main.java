@@ -1,5 +1,6 @@
 package com.appointment.com.asi;
 
+import com.appointment.com.asi.utils.FXUtil;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,9 +11,9 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-in-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(FXUtil.SIGN_IN));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Appointment System");
         stage.setScene(scene);
         stage.show();
     }

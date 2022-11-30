@@ -13,17 +13,10 @@ import java.io.IOException;
 
 public class FXUtil {
 
-    public static final String CONTACT_REPORT = "appointments_contact_schedule.fxml";
-    public static final String CUSTOMER_REPORT = "appointments_customer_schedule.fxml";
-    public static final String CUSTOMER_PANEL = "customers_panel.fxml";
-    public static final String CUSTOMER_ADD = "customers_add.fxml";
-    public static final String CUSTOMER_VIEW = "customers_view.fxml";
-    public static final String APPOINTMENTS_PANEL = "appointments_panel.fxml";
-    public static String LOGIN = "app_login.fxml";
-    public static String DASHBOARD = "dashboard.fxml";
-    public static String APPOINTMENTS_ADD = "appointments_add.fxml";
-    public static String APPOINTMENTS_HOME = "appointments_home.fxml";
-    public static String APPOINTMENTS_VIEW = "appointments_view.fxml";
+    // all view resource link
+    public static final String SIGN_IN = "signIn.fxml";
+    public static final String PATIENT_FONT_PAGE = "patientFrontPage.fxml";
+    public static final String STAFF_FONT_PAGE = "staffFrontPage.fxml";
 
     // load fxml view in the stage
     public static void loadAnchorView(Class<?> aClass, String fxSource, AnchorPane rootPane, Object... data) {
