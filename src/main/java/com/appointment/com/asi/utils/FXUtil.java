@@ -24,6 +24,14 @@ public class FXUtil {
     public static final String VIEW_BILLS_PATIENT = "viewBillsPatient.fxml";
 
     public static final String STAFF_FONT_PAGE = "staffFrontPage.fxml";
+    public static final String STAFF_VIEW_PATIENT_PAGE = "staffViewPatient.fxml";
+    public static final String VIEW_APPOINTMENT_STAFF = "viewAppointmentStaff.fxml";
+    public static final String VIEW_RECORD_STAFF = "viewRecordStaff.fxml";
+    public static final String VIEW_OPERATION_STAFF = "viewOperationStaff.fxml";
+    public static final String VIEW_STAFF_INFO = "viewStaffInfo.fxml";
+    public static final String EDIT_STAFF_INFO = "editStaffInfo.fxml";
+    public static final String VIEW_ROOMS_STAFF = "editStaffInfo.fxml";
+
 
     // load fxml view in the stage
     public static void loadView(Class<?> aClass, ActionEvent event, String fxSource, String title, Object... data) {

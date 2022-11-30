@@ -17,12 +17,15 @@ public class StaffFontPageController implements Initializable {
     }
 
     public void onApp(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_APPOINTMENT_STAFF, "Appointment System");
     }
 
     public void onInformation(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_STAFF_INFO, "Appointment System");
     }
 
     public void onOperation(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_OPERATION_STAFF, "Appointment System");
     }
 
     public void onSignOut(ActionEvent actionEvent) {
@@ -30,11 +33,14 @@ public class StaffFontPageController implements Initializable {
     }
 
     public void onRecords(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_RECORD_STAFF, "Appointment System");
     }
 
     public void onPatientsButton(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.STAFF_VIEW_PATIENT_PAGE, "Appointment System");
     }
 
     public void onRoom(ActionEvent actionEvent) {
+        FXUtil.loadView(getClass(), actionEvent, FXUtil.VIEW_ROOMS_STAFF, "Appointment System");
     }
 }
